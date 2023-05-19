@@ -1,0 +1,50 @@
+---
+title: "Git Example"
+author: "Bichmai Vu"
+date: "2023-05-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+cars_data <- mtcars
+cars_data
+```
+
+```{r}
+library(tidyverse)
+ggplot(
+  data = cars_data,
+  mapping = aes(
+    x = cyl,
+    y = disp
+  )
+) +
+  geom_point()
+```
+
+```{r}
+ggplot(
+  data = cars_data,
+  mapping = aes(
+    x = mpg,
+    y = disp,
+    color = factor(cyl)
+  )
+  
+  
+  
+) +
+  geom_point()
+```
+
+Guess 2
+372 459
+
+Guess 3
+30%
+
+
